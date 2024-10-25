@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clan Earsk</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Clan Earsk</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#rules">Règlement</a></li>
+                <li><a href="#apply">Rejoindre</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about" class="box">
+        <h2>À propos de Earsk</h2>
+        <p>Le clan Earsk est une communauté de gamers passionnés, unie par des valeurs de discipline et de passion pour les jeux compétitifs. Rejoignez-nous pour une expérience de jeu unique et intense !</p>
+        <button class="discord-btn" onclick="window.open('https://discord.gg/CSwbsVZkXF')">Rejoindre notre Discord</button>
+    </section>
+
+    <section id="rules" class="box">
+        <h2>Règlement du Clan</h2>
+        <ul>
+            <li>Respectez tous les membres.</li>
+            <li>Pas de triche ou d’utilisation de logiciels interdits.</li>
+            <li>Participation active aux événements et entraînements.</li>
+            <li>Comportement exemplaire sur Discord et dans les jeux.</li>
+        </ul>
+    </section>
+
+    <section id="apply" class="box">
+        <h2>Rejoindre le clan Earsk</h2>
+        <form id="candidatureForm">
+            <label for="name">Pseudo :</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="age">Âge :</label>
+            <input type="number" id="age" name="age" required>
+            
+            <label for="platform">Plateforme :</label>
+            <select id="platform" name="platform" required>
+                <option value="PC">PC</option>
+                <option value="Console">Console</option>
+            </select>
+            
+            
+            <label for="motivation">Pk veux-tu rejoindre notre team :</label>
+            <textarea id="motivation" name="motivation" required></textarea>
+            
+            <label for="experience">Tu es quel rank que ce soit en Ranked ou Reloaded Ranked :</label>
+            <textarea id="experience" name="experience" required></textarea>
+            
+            <label for="availability">Horaires de disponibilité :</label>
+            <textarea id="availability" name="availability" required></textarea>
+            
+            <button type="submit">Envoyer la candidature</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Clan Earsk. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
